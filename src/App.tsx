@@ -186,8 +186,8 @@ function App() {
       // Add debug info about environment
       setDebugInfo('Checking API configuration...');
       console.log('Environment check:', {
-        apiKeyExists: !!import.meta.env.VITE_ANTHROPIC_API_KEY,
-        apiKeyLength: import.meta.env.VITE_ANTHROPIC_API_KEY?.length || 0,
+        apiKeyExists: !!import.meta.env.ANTHROPIC_API_KEY,
+        apiKeyLength: import.meta.env.ANTHROPIC_API_KEY?.length || 0,
         isDevelopment: import.meta.env.DEV,
         baseUrl: window.location.origin,
       });
